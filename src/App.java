@@ -5,10 +5,7 @@ import java.util.Scanner;
 
 
 public class App {
-
-
-//    private Fighter player1;
-//    private Fighter player2;
+    
 
 
     private static final String[] WEAPON_OPTIONS = {
