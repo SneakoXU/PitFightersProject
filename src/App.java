@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class App {
-    
+
 
 
     private static final String[] WEAPON_OPTIONS = {
@@ -185,15 +185,15 @@ public class App {
             }else if(randFight2.getWeapon().equals("Spear")){
                 System.out.println(randFight2.getName() + " wins! " + randFight1.getName() + " has been killed by a " + randFight2.getWeapon().toLowerCase());
                 player1.remove(randFight1);
-            }else if(randFight2.getWeapon().equals("Sword Shield")){
+            }else if(randFight2.getWeapon().equals("Sword and Shield")){
                 System.out.println(randFight2.getName() + " wins! " + randFight1.getName() + " has been killed by a " + randFight2.getWeapon().toLowerCase());
                 player1.remove(randFight1);
             }else if(randFight2.getWeapon().equals("Warhammer")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Dagger")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }
         }
 
@@ -201,7 +201,7 @@ public class App {
         if(randFight1.getWeapon().equals("Spear")){
             if(randFight2.getWeapon().equals("Crossbow")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Spear")){
                 System.out.println("Both fighters are dead.");
                 player1.remove(randFight1);
@@ -211,7 +211,7 @@ public class App {
                 player1.remove(randFight1);
             }else if(randFight2.getWeapon().equals("Warhammer")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Dagger")){
                 System.out.println(randFight2.getName() + " wins! " + randFight1.getName() + " has been killed by a " + randFight2.getWeapon().toLowerCase());
                 player1.remove(randFight1);
@@ -222,11 +222,11 @@ public class App {
         if(randFight1.getWeapon().equals("Sword and Shield")){
             if(randFight2.getWeapon().equals("Crossbow")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Spear")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
-            }else if(randFight2.getWeapon().equals("Sword Shield")){
+                player2.remove(randFight2);
+            }else if(randFight2.getWeapon().equals("Sword and Shield")){
                 System.out.println("Both fighters are dead.");
                 player1.remove(randFight1);
                 player2.remove(randFight2);
@@ -246,10 +246,10 @@ public class App {
                 player1.remove(randFight1);
             }else if(randFight2.getWeapon().equals("Spear")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
-            }else if(randFight2.getWeapon().equals("Sword Shield")){
+                player2.remove(randFight2);
+            }else if(randFight2.getWeapon().equals("Sword and Shield")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Warhammer")){
                 System.out.println("Both fighters are dead.");
                 player1.remove(randFight1);
@@ -267,10 +267,10 @@ public class App {
                 player1.remove(randFight1);
             }else if(randFight2.getWeapon().equals("Spear")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
-            }else if(randFight2.getWeapon().equals("Sword Shield")){
+                player2.remove(randFight2);
+            }else if(randFight2.getWeapon().equals("Sword and Shield")){
                 System.out.println(randFight1.getName() + " wins! " + randFight2.getName() + " has been killed by a " + randFight1.getWeapon().toLowerCase());
-                player2.remove(randFight1);
+                player2.remove(randFight2);
             }else if(randFight2.getWeapon().equals("Warhammer")){
                 System.out.println(randFight2.getName() + " wins! " + randFight1.getName() + " has been killed by a " + randFight2.getWeapon().toLowerCase());
                 player1.remove(randFight1);
@@ -281,8 +281,8 @@ public class App {
             }
         }
 
-//        printFighters(player1);
-//        printFighters(player2);
+        printFighters(player1);
+        printFighters(player2);
 
     }
 }
